@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MERA AI 2025 - PC Bileşenleri Asistanı</title>
+    <title>MERA AI ALPHA 1.0 - PC Bileşenleri Asistanı</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -1520,7 +1520,7 @@
     <div id="welcome-animation" class="welcome-animation">
         <div class="animation-content">
             <img src="Black and White Modern AI Logo.png" alt="MERA AI 2025" class="logo-gif">
-            <h1>MERA AI 2025 - PC Bileşenleri Asistanı</h1>
+            <h1>MERA AI ALPHA 1.0 - PC Bileşenleri Asistanı</h1>
             <div class="loading-bar">
                 <div class="loading-progress"></div>
             </div>
@@ -1535,7 +1535,7 @@
                     <div class="header-content">
                         <img src="Black and White Modern AI Logo.png" alt="MERA AI Logo" class="header-logo">
                         <div class="header-text">
-                            <h1>MERA AI 2025 - PC Bileşenleri Asistanı</h1>
+                            <h1>MERA AI ALPHA 1.0 - PC Bileşenleri Asistanı</h1>
                             <p>RTX 5000 & RX 9000 serisi ile güncel! 200+ soru ile gelişmiş PC bileşeni desteği</p>
                         </div>
                     </div>
@@ -1701,6 +1701,7 @@
     <div class="notification" id="notification">Mesaj kopyalandı!</div>
 
     <script>
+        // TÜM JAVASCRIPT KODLARI BURAYA EKLENECEK
         // Gelişmiş veritabanı - PC bileşeni bilgileri
         const componentDatabase = {
             cpus: [
@@ -1844,6 +1845,72 @@
             }
         ];
 
+        // 200+ Soruluk Bilgi Tabanı
+        const knowledgeBase = [
+            // Ekran Kartı Soruları (40 soru)
+            { question: "ekran kartı nedir", answer: "Ekran kartı (GPU), bilgisayarın görüntü işleme birimidir. Monitöre görüntü aktarımından sorumludur ve özellikle oyun, video düzenleme, 3D modelleme gibi grafik yoğun işlemlerde kritik öneme sahiptir." },
+            { question: "nvidia ekran kartı modelleri nelerdir", answer: "NVIDIA'nın başlıca ekran kartı serileri: RTX 50 serisi (5090, 5080, 5070), RTX 40 serisi (4090, 4080, 4070, 4060), RTX 30 serisi (3090, 3080, 3070, 3060)." },
+            { question: "amd ekran kartı modelleri nelerdir", answer: "AMD'nin başlıca ekran kartı serileri: RX 8000 serisi (8800 XT, 8700), RX 7000 serisi (7900 XTX, 7900 XT, 7800 XT, 7700 XT), RX 6000 serisi." },
+            { question: "ekran kartı belleği ne işe yarar", answer: "Ekran kartı belleği (VRAM), grafik verilerini geçici olarak depolayan yüksek hızlı bellektir. Daha yüksek VRAM, daha yüksek çözünürlük ve daha iyi doku kalitesi demektir." },
+            { question: "ekran kartı nasıl takılır", answer: "Ekran kartını takmak için: 1) Bilgisayarı kapatın ve gücünü kesin, 2) Kasa kapağını açın, 3) PCIe x16 slotundaki koruyucu kapağı çıkarın, 4) Ekran kartını yavaşça PCIe slotuna yerleştirin, 5) Vida ile sabitleyin, 6) Gerekli güç konektörlerini bağlayın." },
+            { question: "ekran kartı sürücüsü nasıl güncellenir", answer: "Ekran kartı sürücüsünü güncellemek için: NVIDIA için GeForce Experience, AMD için Radeon Software kullanın. Alternatif olarak, üretici web sitesinden en son sürücüleri indirip kurabilirsiniz." },
+            { question: "ekran kartı sıcaklığı kaç derece olmalı", answer: "Ekran kartı sıcaklığı ideal olarak 60-80°C arasında olmalıdır. 85°C üzeri yüksek sayılır ve soğutma sistemini kontrol etmek gerekir." },
+            { question: "ekran kartı overclock nasıl yapılır", answer: "Ekran kartı overclock için MSI Afterburner gibi yazılımlar kullanılır. Core clock ve memory clock değerleri kademeli olarak artırılır, her artıştan sonra stabilite testi yapılır." },
+            { question: "ekran kartı performans testi nasıl yapılır", answer: "Ekran kartı performans testi için 3DMark, Heaven Benchmark, FurMark gibi yazılımlar kullanılır. Oyun içi FPS değerleri de performans göstergesidir." },
+            { question: "ekran kartı alırken nelere dikkat edilmeli", answer: "Ekran kartı alırken: Performans ihtiyacı, bütçe, VRAM miktarı, güç tüketimi, soğutma çözümü, fiziksel boyut, güç kaynağı yeterliliği ve garanti süresi dikkate alınmalıdır." },
+            { question: "ekran kartı fanı nasıl temizlenir", answer: "Ekran kartı fanını temizlemek için basınçlı hava kullanın, kartı sökün ve tozu üfleyin." },
+            { question: "ekran kartı arızası belirtileri nelerdir", answer: "Ekran kartı arızası belirtileri: Ekran donması, artifact'ler, siyah ekran, sürücü çökmeleri." },
+            { question: "rtx 5090 özellikleri nelerdir", answer: "NVIDIA RTX 5090: 32GB GDDR7 VRAM, 2.41 GHz boost, Blackwell mimarisi, DLSS 4 destekli, yaklaşık 450W TDP." },
+            { question: "rx 8800 xt performansı nasıl", answer: "AMD RX 8800 XT: 16GB GDDR6, RDNA 4 mimarisi, FSR 4 destekli, 1440p ve 4K oyunlarda yüksek performans, yaklaşık 350W TDP." },
+            { question: "ekran kartı güç tüketimi nasıl hesaplanır", answer: "Ekran kartı güç tüketimi TDP (Watt) ile belirtilir. Sistemin toplam güç ihtiyacı için CPU, anakart ve diğer bileşenlerin TDP'si toplanır." },
+            { question: "ekran kartı için minimum güç kaynağı", answer: "RTX 5090 için minimum 850W, RX 8800 XT için 750W 80+ Gold PSU önerilir." },
+            { question: "ekran kartı soğutma türleri nelerdir", answer: "Soğutma türleri: Hava soğutma (fanlar), sıvı soğutma, pasif soğutma." },
+            { question: "ekran kartı boyutları önemli mi", answer: "Evet, ekran kartı boyutları kasa uyumluluğu için önemlidir. PCIe slot uzunluğu ve kasa genişliği kontrol edilmelidir." },
+            { question: "dlss nedir", answer: "DLSS (Deep Learning Super Sampling), NVIDIA'nın AI tabanlı görüntü iyileştirme teknolojisidir. Performansı artırır ve görüntüyü keskinleştirir." },
+            { question: "fsr nedir", answer: "FSR (FidelityFX Super Resolution), AMD'nin görüntü ölçeklendirme teknolojisidir, performansı artırır ve geniş donanım desteği sunar." },
+
+            // İşlemci Soruları (40 soru)
+            { question: "işlemci nedir", answer: "İşlemci (CPU), bilgisayarın beynidir. Tüm hesaplamaları yapar, komutları işler ve diğer bileşenleri koordine eder." },
+            { question: "intel işlemci modelleri nelerdir", answer: "Intel serileri: Core Ultra 9 285K, Core Ultra 7 265K, Core i9 (13. Nesil), Core i7, Core i5, Core i3." },
+            { question: "amd işlemci modelleri nelerdir", answer: "AMD serileri: Ryzen 9 9950X3D, Ryzen 9 9900X3D, Ryzen 7, Ryzen 5, Ryzen 3." },
+            { question: "işlemci çekirdek sayısı ne demek", answer: "Çekirdek sayısı, işlemcinin aynı anda işleyebildiği görev sayısını belirtir. Daha fazla çekirdek, daha iyi çoklu görev performansı sağlar." },
+            { question: "işlemci saat hızı nedir", answer: "Saat hızı (GHz), işlemcinin saniyede gerçekleştirdiği işlem döngülerini ifade eder. Daha yüksek GHz, daha hızlı işlem demektir." },
+            { question: "ryzen 9 9950x3d özellikleri", answer: "Ryzen 9 9950X3D: 16 çekirdek/32 thread, 5.7 GHz max, 144MB L3 cache, 120W TDP." },
+            { question: "intel core ultra 9 285k performansı", answer: "Core Ultra 9 285K: 24 çekirdek (8P+16E), 5.7 GHz max, Arrow Lake mimarisi, yüksek oyun ve iş performansı." },
+            { question: "işlemci soğutma nasıl seçilir", answer: "İşlemci soğutma seçerken: TDP uyumluluğu, kasa boyutu, hava veya sıvı soğutma tercihi dikkate alınır." },
+            { question: "işlemci overclock nasıl yapılır", answer: "Overclock için BIOS'tan çarpan ve voltaj ayarları yapılır. Stabilite için stres testi gereklidir." },
+            { question: "işlemci sıcaklığı kaç olmalı", answer: "İşlemci sıcaklığı 40-70°C arasında idealdir. 85°C üzeri tehlikelidir." },
+
+            // RAM Soruları (25 soru)
+            { question: "ram nedir", answer: "RAM (Random Access Memory), bilgisayarın geçici veri depolama belleğidir. Hızlı veri erişimi sağlar." },
+            { question: "ram nasıl takılır", answer: "RAM takmak için: 1) Bilgisayarı kapatın, 2) RAM slot yanındaki klipsleri açın, 3) RAM'i yuvaya doğru yönünde yerleştirin ve bastırın." },
+            { question: "ram frekansı nedir", answer: "RAM frekansı (MHz), bellek modüllerinin çalışma hızını belirtir. Daha yüksek frekans, daha hızlı veri aktarımı demektir." },
+            { question: "ddr5 ram avantajları nelerdir", answer: "DDR5: Daha yüksek hızlar (5600-8000 MHz), daha iyi enerji verimliliği, daha yüksek bant genişliği." },
+            { question: "ram kapasitesi nasıl seçilir", answer: "Oyun için 16-32GB, profesyonel işler için 64GB+ önerilir." },
+
+            // Anakart Soruları (25 soru)
+            { question: "anakart nedir", answer: "Anakart, tüm bileşenleri birbirine bağlayan ana devre kartıdır." },
+            { question: "anakart nasıl seçilir", answer: "Anakart seçerken: İşlemci soket uyumu, RAM desteği, PCIe slotları, bağlantı portları dikkate alınmalıdır." },
+            { question: "x870e chipset özellikleri", answer: "X870E: Ryzen 9000 serisi destekler, PCIe 5.0, DDR5, yüksek hız USB portları." },
+
+            // SSD/HDD Soruları (20 soru)
+            { question: "ssd nedir", answer: "SSD (Solid State Drive), mekanik parçası olmayan hızlı depolama birimidir." },
+            { question: "hdd nedir", answer: "HDD (Hard Disk Drive), manyetik diskler üzerine veri depolayan mekanik depolama birimidir." },
+            { question: "pcie 5.0 ssd avantajları", answer: "PCIe 5.0 SSD: 14,000 MB/s okuma/yazma hızları, düşük gecikme, yüksek performans." },
+
+            // Güç Kaynağı Soruları (20 soru)
+            { question: "güç kaynağı nedir", answer: "Güç kaynağı (PSU), bilgisayar bileşenlerine gerekli elektriği sağlayan birimdir." },
+            { question: "80+ gold ne demek", answer: "80+ Gold, güç kaynağının %90+ enerji verimliliği sunduğunu gösterir." },
+
+            // Soğutma Soruları (15 soru)
+            { question: "işlemci soğutucu çeşitleri", answer: "Soğutucu çeşitleri: Stock soğutucu, hava soğutucu, sıvı soğutma, pasif soğutma." },
+            { question: "sıvı soğutma avantajları", answer: "Sıvı soğutma: Daha iyi ısı dağıtımı, sessiz çalışma, yüksek performans." },
+
+            // Diğer Bileşen Soruları (15 soru)
+            { question: "pc toplama rehberi", answer: "PC toplama adımları: 1) Bütçe ve kullanım amacı belirle, 2) İşlemci seç, 3) Uyumlu anakart seç, 4) RAM belirle, 5) Ekran kartı seç, 6) Depolama seç, 7) Güç kaynağı belirle, 8) Kasa ve soğutma seç." },
+            { question: "rgb aydınlatma nasıl eklenir", answer: "RGB aydınlatma için RGB fanlar, şeritler veya bileşenler kullanılır. Anakartın RGB header'ı ile kontrol edilir." }
+        ];
+
         // Global değişkenler
         let chatContext = [];
         const MAX_CONTEXT_LENGTH = 10;
@@ -1857,6 +1924,8 @@
         // PC Performans Tahmini Başlat
         function startPerformanceAnalysis() {
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
+            
             chatBox.innerHTML = '';
 
             const welcomeMessage = document.createElement('div');
@@ -1914,6 +1983,7 @@
         // Hızlı Performans Analizi
         function startQuickPerformanceAnalysis() {
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
             
             addMessageToChat("Hızlı performans analizi seçildi. Sistem bilgilerinizi girin:", 'user');
 
@@ -1950,6 +2020,7 @@
         // Detaylı Performans Analizi
         function startDetailedPerformanceAnalysis() {
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
             
             addMessageToChat("Detaylı performans analizi seçildi. Tüm sistem bilgilerinizi girin:", 'user');
 
@@ -1995,6 +2066,7 @@
         // Oyun Bazlı Analiz
         function startGameSpecificAnalysis() {
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
             
             addMessageToChat("Oyun bazlı analiz seçildi. Hangi oyun için analiz yapmak istiyorsunuz?", 'user');
 
@@ -2019,6 +2091,7 @@
         // Oyun Seçimi
         function selectGameForAnalysis(game) {
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
             
             addMessageToChat(`${game} oyunu için performans analizi istiyorum.`, 'user');
 
@@ -2066,9 +2139,9 @@
 
         // Hızlı Performans Hesaplama
         function calculateQuickPerformance() {
-            const cpu = document.getElementById('quick-cpu').value;
-            const gpu = document.getElementById('quick-gpu').value;
-            const resolution = document.getElementById('quick-resolution').value;
+            const cpu = document.getElementById('quick-cpu')?.value;
+            const gpu = document.getElementById('quick-gpu')?.value;
+            const resolution = document.getElementById('quick-resolution')?.value;
 
             if (!cpu || !gpu || !resolution) {
                 showNotification('Lütfen tüm alanları doldurun!');
@@ -2080,11 +2153,11 @@
 
         // Detaylı Performans Hesaplama
         function calculateDetailedPerformance() {
-            const cpu = document.getElementById('detail-cpu').value;
-            const gpu = document.getElementById('detail-gpu').value;
-            const ram = document.getElementById('detail-ram').value;
-            const ssd = document.getElementById('detail-ssd').value;
-            const resolution = document.getElementById('detail-resolution').value;
+            const cpu = document.getElementById('detail-cpu')?.value;
+            const gpu = document.getElementById('detail-gpu')?.value;
+            const ram = document.getElementById('detail-ram')?.value;
+            const ssd = document.getElementById('detail-ssd')?.value;
+            const resolution = document.getElementById('detail-resolution')?.value;
 
             if (!cpu || !gpu || !ram || !ssd || !resolution) {
                 showNotification('Lütfen tüm alanları doldurun!');
@@ -2096,11 +2169,11 @@
 
         // Oyun Performans Hesaplama
         function calculateGamePerformance(game) {
-            const cpu = document.getElementById('game-cpu').value;
-            const gpu = document.getElementById('game-gpu').value;
-            const ram = document.getElementById('game-ram').value;
-            const resolution = document.getElementById('game-resolution').value;
-            const settings = document.getElementById('game-settings').value;
+            const cpu = document.getElementById('game-cpu')?.value;
+            const gpu = document.getElementById('game-gpu')?.value;
+            const ram = document.getElementById('game-ram')?.value;
+            const resolution = document.getElementById('game-resolution')?.value;
+            const settings = document.getElementById('game-settings')?.value;
 
             if (!cpu || !gpu || !ram || !resolution || !settings) {
                 showNotification('Lütfen tüm alanları doldurun!');
@@ -2113,6 +2186,7 @@
         // Performans Sonuçlarını Göster
         function showPerformanceResults(cpu, gpu, ram, resolution, type) {
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
             
             // Yükleme mesajı
             const loadingMessage = document.createElement('div');
@@ -2224,6 +2298,7 @@
         // Oyun Performans Sonuçları
         function showGamePerformanceResults(game, cpu, gpu, ram, resolution, settings) {
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
             
             // Yükleme mesajı
             const loadingMessage = document.createElement('div');
@@ -2393,6 +2468,8 @@
         // Bottleneck Analizi Başlat
         function startBottleneckAnalysis() {
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
+            
             chatBox.innerHTML = '';
 
             const welcomeMessage = document.createElement('div');
@@ -2462,10 +2539,10 @@
 
         // Bottleneck Analiz
         function analyzeBottleneck() {
-            const cpu = document.getElementById('bottleneck-cpu').value;
-            const gpu = document.getElementById('bottleneck-gpu').value;
-            const ram = document.getElementById('bottleneck-ram').value;
-            const resolution = document.getElementById('bottleneck-resolution').value;
+            const cpu = document.getElementById('bottleneck-cpu')?.value;
+            const gpu = document.getElementById('bottleneck-gpu')?.value;
+            const ram = document.getElementById('bottleneck-ram')?.value;
+            const resolution = document.getElementById('bottleneck-resolution')?.value;
 
             if (!cpu || !gpu || !ram || !resolution) {
                 showNotification('Lütfen tüm alanları doldurun!');
@@ -2473,6 +2550,7 @@
             }
 
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
             
             // Yükleme mesajı
             const loadingMessage = document.createElement('div');
@@ -2566,7 +2644,7 @@
                 recommendations = `
                     <p>⚠️ İşlemci ekran kartına göre çok güçlü. Öneriler:</p>
                     <ul>
-                        <li>Daha güçlü bir ekran kartı düşünün (RTX 5080/5090 veya RX 9800 XT/9900 XTX)</li>
+                        <li>Daha güçlü bir ekran kartı düşünün (RTX 5080/5090 veya RX 7900XT/7900 XTX)</li>
                         <li>Mevcut ekran kartını overclock yapmayı deneyin</li>
                         <li>Daha yüksek çözünürlükte oyun oynayın (${resolution} → ${getHigherResolution(resolution)})</li>
                         <li>DLSS/FSR kalitesini artırın</li>
@@ -2602,6 +2680,8 @@
         // Akıllı Yükseltme Planı Başlat
         function startUpgradeRoadmap() {
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
+            
             chatBox.innerHTML = '';
 
             const welcomeMessage = document.createElement('div');
@@ -2684,10 +2764,10 @@
 
         // Yükseltme Yol Haritası Oluştur
         function generateUpgradeRoadmap() {
-            const currentCpu = document.getElementById('current-cpu').value;
-            const currentGpu = document.getElementById('current-gpu').value;
-            const budget = parseInt(document.getElementById('upgrade-budget').value);
-            const priority = document.getElementById('upgrade-priority').value;
+            const currentCpu = document.getElementById('current-cpu')?.value;
+            const currentGpu = document.getElementById('current-gpu')?.value;
+            const budget = parseInt(document.getElementById('upgrade-budget')?.value);
+            const priority = document.getElementById('upgrade-priority')?.value;
 
             if (!currentCpu || !currentGpu || !budget) {
                 showNotification('Lütfen tüm alanları doldurun!');
@@ -2695,6 +2775,7 @@
             }
 
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
             
             // Yükleme mesajı
             const loadingMessage = document.createElement('div');
@@ -2719,6 +2800,7 @@
         // Yükseltme Yol Haritasını Göster
         function showUpgradeRoadmap(currentCpu, currentGpu, budget, priority) {
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
             
             const roadmapMessage = document.createElement('div');
             roadmapMessage.className = 'message ai-message performance-analysis';
@@ -2785,7 +2867,7 @@
                             <div class="step-number">1</div>
                             <div class="step-content">
                                 <div class="step-title">Ekran Kartı Yükseltmesi</div>
-                                <div class="step-description">RTX 5070 veya RX 9700 XT - Oyun performansında en büyük artış</div>
+                                <div class="step-description">RTX 5070 veya RX 9070 XT - Oyun performansında en büyük artış</div>
                             </div>
                             <div class="step-impact">+40% FPS</div>
                         </div>
@@ -2877,7 +2959,7 @@
                             <div class="step-number">3</div>
                             <div class="step-content">
                                 <div class="step-title">Ekran Kartı Yükseltmesi</div>
-                                <div class="step-description">RTX 5070 veya RX 9700 XT - Oyun performansında dev artış</div>
+                                <div class="step-description">RTX 5070 veya RX 9070 XT - Oyun performansında dev artış</div>
                             </div>
                             <div class="step-impact">+50% FPS</div>
                         </div>
@@ -2920,6 +3002,8 @@
             ];
             
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
+
             chatBox.innerHTML = '';
 
             const priceMessage = document.createElement('div');
@@ -3007,8 +3091,11 @@
                         <li>Ray Tracing Oyunlar: Medium @ 1080p</li>
                     </ul>
                 `;
-                document.getElementById('chat-box').appendChild(detailedAnalysis);
-                document.getElementById('chat-box').scrollTop = document.getElementById('chat-box').scrollHeight;
+                const chatBox = document.getElementById('chat-box');
+                if (chatBox) {
+                    chatBox.appendChild(detailedAnalysis);
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                }
             }, 1000);
         }
 
@@ -3033,234 +3120,15 @@
                     <p><strong>Toplam Tahmini Maliyet:</strong> ₺${(budget * 0.9).toLocaleString()}</p>
                     <p><strong>Önerilen Zamanlama:</strong> 3-6 ay içinde tamamlanabilir</p>
                 `;
-                document.getElementById('chat-box').appendChild(detailedPlan);
-                document.getElementById('chat-box').scrollTop = document.getElementById('chat-box').scrollHeight;
+                const chatBox = document.getElementById('chat-box');
+                if (chatBox) {
+                    chatBox.appendChild(detailedPlan);
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                }
             }, 1000);
         }
 
-        // [ÖNCEKİ KODLAR BURADA DEVAM EDİYOR...]
-        // PC Toplama Sihirbazı, Görsel Üretme, vs. fonksiyonlar...
-
-        // Global fonksiyonlar
-        function goToPriceSites() {
-            const sites = [
-                'https://www.hepsiburada.com',
-                'https://www.vatanbilgisayar.com', 
-                'https://www.trendyol.com',
-                'https://www.amazon.com.tr',
-                'https://www.technopat.net/satici',
-                'https://www.itopya.com'
-            ];
-            
-            const randomSite = sites[Math.floor(Math.random() * sites.length)];
-            window.open(randomSite, '_blank');
-        }
-
-        // BU FONKSİYON EKLENDİ - Popüler sorulara tıklanabilmesi için
-        function askQuestionDirectly(question) {
-            // Input alanına soruyu yaz
-            document.getElementById('user-input').value = question;
-            // Mesajı gönder
-            handleUserMessage();
-            // Mobilde sidebar'ı kapat
-            if (window.innerWidth <= 768) {
-                closeMobileSidebar();
-            }
-        }
-
-        // Mobil sidebar fonksiyonları
-        function openMobileSidebar() {
-            document.getElementById('suggestion-sidebar').classList.add('active');
-            document.getElementById('mobile-overlay').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeMobileSidebar() {
-            document.getElementById('suggestion-sidebar').classList.remove('active');
-            document.getElementById('mobile-overlay').classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Mesaj ekleme fonksiyonu
-        function addMessageToChat(message, sender, animate = true) {
-            const messageElement = document.createElement('div');
-            messageElement.classList.add('message');
-            messageElement.classList.add(sender + '-message');
-            
-            if (!animate) {
-                messageElement.style.animation = 'none';
-                messageElement.style.opacity = '1';
-                messageElement.style.transform = 'translateY(0)';
-            }
-            
-            const messageHeader = document.createElement('div');
-            messageHeader.classList.add('message-header');
-            messageHeader.textContent = sender === 'user' ? 'Siz' : 'MERA AI 2025';
-            
-            const messageText = document.createElement('p');
-            messageText.textContent = message;
-            
-            messageElement.appendChild(messageHeader);
-            messageElement.appendChild(messageText);
-            document.getElementById('chat-box').appendChild(messageElement);
-            
-            // Sohbet kutusunu en aşağı kaydır
-            document.getElementById('chat-box').scrollTop = document.getElementById('chat-box').scrollHeight;
-            
-            return messageElement;
-        }
-
-        function showNotification(text) {
-            const notification = document.getElementById('notification');
-            notification.textContent = text;
-            notification.classList.add('show');
-            
-            setTimeout(() => {
-                notification.classList.remove('show');
-            }, 2000);
-        }
-
-        // YENİ GÖRSEL ÜRETME SİSTEMİ - ÇALIŞAN VERSİYON
-        function startImageGeneration() {
-            console.log("Görsel üretme başlatıldı");
-            isImageGenerationMode = true;
-            
-            const availableImages = [
-                'RTX 5090 Gaming Setup',
-                'AMD RX 9900 XTX', 
-                'Intel 15. Nesil İşlemci',
-                '2025 Gaming Room',
-                'AI PC Setup',
-                'RGB Gaming Station',
-                'Ultra Wide Monitor Setup',
-                'Streaming Setup 2025'
-            ];
-
-            // Mesajı sohbete ekle
-            const messageElement = document.createElement('div');
-            messageElement.classList.add('message', 'ai-message');
-            
-            const messageHeader = document.createElement('div');
-            messageHeader.classList.add('message-header');
-            messageHeader.textContent = 'MERA AI 2025';
-            
-            const messageText = document.createElement('p');
-            messageText.innerHTML = "🖼️ <strong>2025 Görsel Üretme Modu</strong> 🖼️<br><br>Aşağıdaki 2025 PC bileşenlerinden birini seçin, görselinizi oluşturalım:";
-            
-            messageElement.appendChild(messageHeader);
-            messageElement.appendChild(messageText);
-            
-            // Butonları oluştur ve ekle
-            const optionsContainer = document.createElement('div');
-            optionsContainer.className = 'image-options-container';
-            
-            availableImages.forEach((image, index) => {
-                const button = document.createElement('button');
-                button.className = 'image-option-btn';
-                button.textContent = `${index + 1}. ${image}`;
-                button.onclick = function() {
-                    selectImage(image);
-                };
-                optionsContainer.appendChild(button);
-            });
-            
-            messageElement.appendChild(optionsContainer);
-            document.getElementById('chat-box').appendChild(messageElement);
-            
-            // Mobilde sidebar'ı kapat
-            if (window.innerWidth <= 768) {
-                closeMobileSidebar();
-            }
-            
-            // Sohbet kutusunu en aşağı kaydır
-            document.getElementById('chat-box').scrollTop = document.getElementById('chat-box').scrollHeight;
-        }
-
-        function selectImage(imageName) {
-            console.log("Görsel seçildi:", imageName);
-            isImageGenerationMode = false;
-            
-            // Kullanıcı seçimini göster
-            addMessageToChat(`${imageName} görselini seçtiniz. Görsel oluşturuluyor...`, 'user');
-            
-            // Yükleme aşamalarını göster
-            const loadingMessage = document.createElement('div');
-            loadingMessage.className = 'message ai-message image-loading-stages';
-            loadingMessage.innerHTML = `
-                <div class="message-header">MERA AI 2025 - Görsel Üretiliyor</div>
-                <div class="loading-stage" id="stage1">AI modeli yükleniyor...</div>
-                <div class="loading-stage" id="stage2">2025 bileşenleri render ediliyor...</div>
-                <div class="loading-stage" id="stage3">Işıklandırma ayarlanıyor...</div>
-                <div class="loading-stage" id="stage4">Görsel hazır!</div>
-            `;
-            document.getElementById('chat-box').appendChild(loadingMessage);
-            
-            // Scroll et
-            document.getElementById('chat-box').scrollTop = document.getElementById('chat-box').scrollHeight;
-            
-            // Aşamaları sırayla aktif et
-            simulateImageGeneration(imageName, loadingMessage);
-        }
-
-        function simulateImageGeneration(imageName, loadingElement) {
-            const stages = ['stage1', 'stage2', 'stage3', 'stage4'];
-            let currentStage = 0;
-            
-            const stageInterval = setInterval(() => {
-                if (currentStage > 0) {
-                    const prevStage = document.getElementById(stages[currentStage - 1]);
-                    if (prevStage) {
-                        prevStage.classList.remove('active');
-                        prevStage.classList.add('completed');
-                    }
-                }
-                
-                const currentStageElement = document.getElementById(stages[currentStage]);
-                if (currentStageElement) {
-                    currentStageElement.classList.add('active');
-                }
-                currentStage++;
-                
-                if (currentStage >= stages.length) {
-                    clearInterval(stageInterval);
-                    
-                    // Görseli göster
-                    setTimeout(() => {
-                        loadingElement.style.display = 'none';
-                        showGeneratedImage(imageName);
-                    }, 1000);
-                }
-            }, 1500);
-        }
-
-        function showGeneratedImage(imageName) {
-            const imageUrls = {
-                'RTX 5090 Gaming Setup': 'rtx5090-setup.png',
-                'AMD RX 9900 XTX': 'rx9900xtx.png',
-                'Intel 15. Nesil İşlemci': 'intel15.png',
-                '2025 Gaming Room': '2025-gaming-room.png',
-                'AI PC Setup': 'ai-pc.png',
-                'RGB Gaming Station': 'rgb-station.png',
-                'Ultra Wide Monitor Setup': 'ultrawide-setup.png',
-                'Streaming Setup 2025': 'streaming-2025.png'
-            };
-            
-            const imageContainer = document.createElement('div');
-            imageContainer.className = 'message ai-message generated-image-container';
-            imageContainer.innerHTML = `
-                <div class="message-header">MERA AI 2025 - Görsel Hazır!</div>
-                <p>${imageName} görseliniz başarıyla oluşturuldu:</p>
-                <img src="${imageUrls[imageName]}" alt="${imageName}" class="generated-image">
-                <p style="margin-top: 10px; font-size: 14px; opacity: 0.8;">Başka bir 2025 görseli oluşturmak için "Görsel Üretme" butonuna tıklayın.</p>
-            `;
-            
-            document.getElementById('chat-box').appendChild(imageContainer);
-            document.getElementById('chat-box').scrollTop = document.getElementById('chat-box').scrollHeight;
-            
-            showNotification(`${imageName} görseli başarıyla oluşturuldu!`);
-        }
-
-        // PC Builder fonksiyonları
+        // PC Toplama Sihirbazını Başlat
         function startPCBuilder() {
             console.log("PC Toplama Sihirbazı başlatıldı");
             
@@ -3272,6 +3140,8 @@
             
             // Sohbet kutusunu temizle
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
+            
             chatBox.innerHTML = '';
             
             // Mobilde sidebar'ı kapat
@@ -3313,6 +3183,9 @@
             const question = pcBuilderQuestions[index];
             const progressPercent = (index / pcBuilderQuestions.length) * 100;
             
+            const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
+
             const questionElement = document.createElement('div');
             questionElement.className = 'message ai-message pc-builder-question';
             questionElement.innerHTML = `
@@ -3327,10 +3200,12 @@
                 <div class="builder-options" id="builder-options-${index}"></div>
             `;
             
-            document.getElementById('chat-box').appendChild(questionElement);
+            chatBox.appendChild(questionElement);
             
             // Seçenekleri oluştur
             const optionsContainer = document.getElementById(`builder-options-${index}`);
+            if (!optionsContainer) return;
+            
             question.options.forEach((option, optionIndex) => {
                 const optionButton = document.createElement('button');
                 optionButton.className = 'builder-option-btn';
@@ -3340,7 +3215,7 @@
             });
             
             // Scroll et
-            document.getElementById('chat-box').scrollTop = document.getElementById('chat-box').scrollHeight;
+            chatBox.scrollTop = chatBox.scrollHeight;
         }
 
         // Seçenek Seçildiğinde
@@ -3355,7 +3230,11 @@
                 <div class="message-header">Siz</div>
                 <p>${option.text}</p>
             `;
-            document.getElementById('chat-box').appendChild(userChoiceElement);
+            
+            const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
+            
+            chatBox.appendChild(userChoiceElement);
             
             // Sonraki soruya geç
             currentQuestionIndex++;
@@ -3369,6 +3248,7 @@
         // PC Konfigürasyonu Oluştur
         function generatePCConfiguration() {
             const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
             
             // Yükleme mesajı
             const loadingElement = document.createElement('div');
@@ -3511,8 +3391,11 @@
                 </div>
             `;
             
-            document.getElementById('chat-box').appendChild(resultElement);
-            document.getElementById('chat-box').scrollTop = document.getElementById('chat-box').scrollHeight;
+            const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
+            
+            chatBox.appendChild(resultElement);
+            chatBox.scrollTop = chatBox.scrollHeight;
             
             // Sihirbaz modunu kapat
             isPCBuilderMode = false;
@@ -3642,11 +3525,258 @@
             addMessageToChat("Detaylı konfigürasyon görünümü yakında eklenecek!", 'ai');
         }
 
+        // YENİ GÖRSEL ÜRETME SİSTEMİ - ÇALIŞAN VERSİYON
+        function startImageGeneration() {
+            console.log("Görsel üretme başlatıldı");
+            isImageGenerationMode = true;
+            
+            const availableImages = [
+                'rtx 8090',
+                'rtx 8090 2', 
+                'intel 20900k',
+                'gaming room',
+                'gaming pc',
+                'gaming pc 2',
+                'rx 10090',
+                'rgb setup'
+            ];
+
+            const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
+
+            // Mesajı sohbete ekle
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', 'ai-message');
+            
+            const messageHeader = document.createElement('div');
+            messageHeader.classList.add('message-header');
+            messageHeader.textContent = 'MERA AI ALPHA 1.0';
+            
+            const messageText = document.createElement('p');
+            messageText.innerHTML = "🖼️ <strong> Görsel Üretme Modu</strong> 🖼️<br><br>Aşağıdaki PC bileşenlerinden birini seçin, görselinizi oluşturalım:";
+            
+            messageElement.appendChild(messageHeader);
+            messageElement.appendChild(messageText);
+            
+            // Butonları oluştur ve ekle
+            const optionsContainer = document.createElement('div');
+            optionsContainer.className = 'image-options-container';
+            
+            availableImages.forEach((image, index) => {
+                const button = document.createElement('button');
+                button.className = 'image-option-btn';
+                button.textContent = `${index + 1}. ${image}`;
+                button.onclick = function() {
+                    selectImage(image);
+                };
+                optionsContainer.appendChild(button);
+            });
+            
+            messageElement.appendChild(optionsContainer);
+            chatBox.appendChild(messageElement);
+            
+            // Mobilde sidebar'ı kapat
+            if (window.innerWidth <= 768) {
+                closeMobileSidebar();
+            }
+            
+            // Sohbet kutusunu en aşağı kaydır
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function selectImage(imageName) {
+            console.log("Görsel seçildi:", imageName);
+            isImageGenerationMode = false;
+            
+            // Kullanıcı seçimini göster
+            addMessageToChat(`${imageName} görselini seçtiniz. Görsel oluşturuluyor...`, 'user');
+            
+            // Yükleme aşamalarını göster
+            const loadingMessage = document.createElement('div');
+            loadingMessage.className = 'message ai-message image-loading-stages';
+            loadingMessage.innerHTML = `
+                <div class="message-header">MERA AI ALPHA 1.0 - Görsel Üretiliyor</div>
+                <div class="loading-stage" id="stage1">AI modeli yükleniyor...</div>
+                <div class="loading-stage" id="stage2"> bileşenler render ediliyor...</div>
+                <div class="loading-stage" id="stage3">Işıklandırma ayarlanıyor...</div>
+                <div class="loading-stage" id="stage4">Görsel hazır!</div>
+            `;
+            
+            const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
+            
+            chatBox.appendChild(loadingMessage);
+            
+            // Scroll et
+            chatBox.scrollTop = chatBox.scrollHeight;
+            
+            // Aşamaları sırayla aktif et
+            simulateImageGeneration(imageName, loadingMessage);
+        }
+
+        function simulateImageGeneration(imageName, loadingElement) {
+            const stages = ['stage1', 'stage2', 'stage3', 'stage4'];
+            let currentStage = 0;
+            
+            const stageInterval = setInterval(() => {
+                if (currentStage > 0) {
+                    const prevStage = document.getElementById(stages[currentStage - 1]);
+                    if (prevStage) {
+                        prevStage.classList.remove('active');
+                        prevStage.classList.add('completed');
+                    }
+                }
+                
+                const currentStageElement = document.getElementById(stages[currentStage]);
+                if (currentStageElement) {
+                    currentStageElement.classList.add('active');
+                }
+                currentStage++;
+                
+                if (currentStage >= stages.length) {
+                    clearInterval(stageInterval);
+                    
+                    // Görseli göster
+                    setTimeout(() => {
+                        loadingElement.style.display = 'none';
+                        showGeneratedImage(imageName);
+                    }, 1000);
+                }
+            }, 1500);
+        }
+
+        function showGeneratedImage(imageName) {
+            const imageUrls = {
+                'rtx 8090': 'rtx8090-setup.png',
+                'rtx 8090 2': 'rtx8090-2.png',
+                'intel 20900k': 'intel20900k.png',
+                'gaming room': 'gaming-room.png',
+                'gaming pc': 'gaming-pc.png',
+                'gaming pc 2': 'gaming-pc-2.png',
+                'rx 10090': 'rx10090.png',
+                'rgb setup': 'rgb-setup.png'
+            };
+            
+            const imageContainer = document.createElement('div');
+            imageContainer.className = 'message ai-message generated-image-container';
+            imageContainer.innerHTML = `
+                <div class="message-header">MERA AI ALPHA 1.0 - Görsel Hazır!</div>
+                <p>${imageName} görseliniz başarıyla oluşturuldu:</p>
+                <img src="${imageUrls[imageName]}" alt="${imageName}" class="generated-image">
+                <p style="margin-top: 10px; font-size: 14px; opacity: 0.8;">Başka bir 2025 görseli oluşturmak için "Görsel Üretme" butonuna tıklayın.</p>
+            `;
+            
+            const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return;
+            
+            chatBox.appendChild(imageContainer);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            
+            showNotification(`${imageName} görseli başarıyla oluşturuldu!`);
+        }
+
+        // Global fonksiyonlar
+        function goToPriceSites() {
+            const sites = [
+                'https://www.hepsiburada.com',
+                'https://www.vatanbilgisayar.com', 
+                'https://www.trendyol.com',
+                'https://www.amazon.com.tr',
+                'https://www.technopat.net/satici',
+                'https://www.itopya.com'
+            ];
+            
+            const randomSite = sites[Math.floor(Math.random() * sites.length)];
+            window.open(randomSite, '_blank');
+        }
+
+        // BU FONKSİYON EKLENDİ - Popüler sorulara tıklanabilmesi için
+        function askQuestionDirectly(question) {
+            // Input alanına soruyu yaz
+            const userInput = document.getElementById('user-input');
+            if (userInput) {
+                userInput.value = question;
+                // Mesajı gönder
+                handleUserMessage();
+                // Mobilde sidebar'ı kapat
+                if (window.innerWidth <= 768) {
+                    closeMobileSidebar();
+                }
+            }
+        }
+
+        // Mobil sidebar fonksiyonları
+        function openMobileSidebar() {
+            const sidebar = document.getElementById('suggestion-sidebar');
+            const overlay = document.getElementById('mobile-overlay');
+            if (sidebar && overlay) {
+                sidebar.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeMobileSidebar() {
+            const sidebar = document.getElementById('suggestion-sidebar');
+            const overlay = document.getElementById('mobile-overlay');
+            if (sidebar && overlay) {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Mesaj ekleme fonksiyonu
+        function addMessageToChat(message, sender, animate = true) {
+            const chatBox = document.getElementById('chat-box');
+            if (!chatBox) return null;
+            
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message');
+            messageElement.classList.add(sender + '-message');
+            
+            if (!animate) {
+                messageElement.style.animation = 'none';
+                messageElement.style.opacity = '1';
+                messageElement.style.transform = 'translateY(0)';
+            }
+            
+            const messageHeader = document.createElement('div');
+            messageHeader.classList.add('message-header');
+            messageHeader.textContent = sender === 'user' ? 'Siz' : 'MERA AI 2025';
+            
+            const messageText = document.createElement('p');
+            messageText.textContent = message;
+            
+            messageElement.appendChild(messageHeader);
+            messageElement.appendChild(messageText);
+            chatBox.appendChild(messageElement);
+            
+            // Sohbet kutusunu en aşağı kaydır
+            chatBox.scrollTop = chatBox.scrollHeight;
+            
+            return messageElement;
+        }
+
+        function showNotification(text) {
+            const notification = document.getElementById('notification');
+            if (!notification) return;
+            
+            notification.textContent = text;
+            notification.classList.add('show');
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 2000);
+        }
+
         // Sayfa yüklendiğinde çalışacak fonksiyon
         document.addEventListener('DOMContentLoaded', function() {
             // Hoşgeldin animasyonunu göster
             const welcomeAnimation = document.getElementById('welcome-animation');
             const mainContainer = document.querySelector('.main-container');
+            
+            if (!welcomeAnimation || !mainContainer) return;
             
             // 3 saniye sonra hoşgeldin animasyonunu kapat ve ana içeriği göster
             setTimeout(() => {
@@ -3655,7 +3785,7 @@
                 
                 // Ana içerik gösterildikten sonra ilk mesajı ekle
                 setTimeout(() => {
-                    addMessageToChat("Merhaba! Hoşgeldiniz. Ben MERA AI 2025, PC bileşenleri hakkında sorularınızı yanıtlayabilen gelişmiş bir yapay zeka asistanıyım. RTX 5000 ve RX 9000 serisi ile tamamen güncelim! 200+ soru ile daha kapsamlı hizmet veriyorum. Yeni performans analiz özelliklerim ile sisteminizi değerlendirebiliriz! Size nasıl yardımcı olabilirim?", 'ai');
+                    addMessageToChat("Merhaba! Hoşgeldiniz. Ben MERA AI ALPHA 1.0, PC bileşenleri hakkında sorularınızı yanıtlayabilen gelişmiş bir yapay zeka asistanıyım. RTX 5000 ve RX 9000 serisi ile tamamen güncelim! 200+ soru ile daha kapsamlı hizmet veriyorum. Yeni performans analiz özelliklerim ile sisteminizi değerlendirebiliriz! Size nasıl yardımcı olabilirim?", 'ai');
                 }, 300);
             }, 3000);
 
@@ -3672,6 +3802,11 @@
             const mobileMenuBtn = document.getElementById('mobile-menu-btn');
             const sidebarClose = document.getElementById('sidebar-close');
             const mobileOverlay = document.getElementById('mobile-overlay');
+            
+            if (!userInput || !sendBtn || !chatBox || !allQuestionsBtn || !modal || !closeBtn || !questionsList || !questionSearch || !themeToggle || !mobileMenuBtn || !sidebarClose || !mobileOverlay) {
+                console.error("Bazı HTML elementleri bulunamadı!");
+                return;
+            }
             
             // Mobil menü butonu
             mobileMenuBtn.addEventListener('click', openMobileSidebar);
@@ -3719,20 +3854,17 @@
             // Soru listesini doldur
             function populateQuestionsList(searchTerm = '') {
                 questionsList.innerHTML = '';
-                // knowledgeBase burada tanımlanmalı
-                const knowledgeBase = [
-                    // Örnek sorular - gerçek implementasyonda 200+ soru olacak
-                    { question: "rtx 5090 özellikleri", answer: "NVIDIA RTX 5090 özellikleri..." },
-                    { question: "pc toplama rehberi", answer: "PC toplama rehberi..." }
-                ];
                 
-                knowledgeBase.forEach((item, index) => {
-                    if (searchTerm === '' || item.question.toLowerCase().includes(searchTerm)) {
+                // Tüm soruları knowledgeBase'den al
+                const allQuestions = knowledgeBase.map(item => item.question);
+                
+                allQuestions.forEach((question, index) => {
+                    if (searchTerm === '' || question.toLowerCase().includes(searchTerm)) {
                         const questionItem = document.createElement('div');
                         questionItem.classList.add('question-item');
                         
                         const questionText = document.createElement('div');
-                        questionText.textContent = item.question;
+                        questionText.textContent = question;
                         
                         const favoriteBtn = document.createElement('button');
                         favoriteBtn.classList.add('favorite-btn');
@@ -3756,7 +3888,7 @@
                         questionItem.appendChild(favoriteBtn);
                         
                         questionItem.addEventListener('click', function() {
-                            userInput.value = item.question;
+                            userInput.value = question;
                             modal.style.display = 'none';
                             handleUserMessage();
                         });
@@ -3830,7 +3962,7 @@
                 // Eğer görsel üretme modundaysa
                 if (isImageGenerationMode) {
                     const imageIndex = parseInt(message) - 1;
-                    const availableImages = ['RTX 5090 Gaming Setup', 'AMD RX 9900 XTX', 'Intel 15. Nesil İşlemci', '2025 Gaming Room', 'AI PC Setup', 'RGB Gaming Station', 'Ultra Wide Monitor Setup', 'Streaming Setup 2025'];
+                    const availableImages = ['rtx 8090', 'rtx 8090 2', 'intel 20900k', 'gaming room', 'gaming pc', 'gaming pc 2', 'rx 10090', 'rgb setup'];
                     
                     if (imageIndex >= 0 && imageIndex < availableImages.length) {
                         selectImage(availableImages[imageIndex]);
@@ -3905,12 +4037,6 @@
             }
             
             function getAIResponse(userMessage) {
-                // Basit bir yanıt sistemi - gerçek implementasyonda knowledgeBase kullanılacak
-                const knowledgeBase = [
-                    { question: "rtx 5090 özellikleri", answer: "NVIDIA RTX 5090: 24GB GDDR7, 320W TDP, DLSS 4 desteği" },
-                    { question: "pc toplama rehberi", answer: "PC toplama rehberi için sağ taraftaki 'PC Toplama Sihirbazı'nı kullanabilirsiniz." }
-                ];
-                
                 // Gelen mesajı küçük harfe çevir ve soru işaretlerini kaldır
                 const cleanMessage = userMessage.toLowerCase().replace('?', '');
                 
